@@ -1,0 +1,27 @@
+{
+  "name": "tasks-crud-api",
+  "version": "1.0.0",
+  "description": "This is a CRUD Api developed in MongoDB",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiki-10/tasks-crud-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiki-10/tasks-crud-api/issues"
+  },
+  "homepage": "https://github.com/Wiki-10/tasks-crud-api#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
