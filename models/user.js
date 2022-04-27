@@ -1,10 +1,11 @@
-import moongose from 'mongoose'
-const {Schema} = moongose
+import moongose from "mongoose";
+const { Schema } = moongose;
 
-const taskSchema = new Schema({
-    username: {
-        type: String,
-        required: true
-    }
+const userSchema = new Schema({
+  username: {
+    type: String,
+    required: true,
+  },
+});
 
-})
+export const userModel = moongose.model("users", userSchema);
