@@ -10,10 +10,11 @@ const PORT = 6000;
 
 app.use(bodyParser.json());
 app.use("/users", userRoutes);
+app.use("/tasks", tasksRoutes);
 
 // Connecting to mongo with the url stored in environment variables
 mongoose.connect(process.env.DATABASE);
-const db = mongoose.connection;
+export const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to database"));
 
