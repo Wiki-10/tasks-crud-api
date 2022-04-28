@@ -1,3 +1,5 @@
+import { userModel } from "../../models/user.js";
+
 export async function getUser(req, res) {
   try {
     const users = await userModel.find();

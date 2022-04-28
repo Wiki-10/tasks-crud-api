@@ -1,3 +1,5 @@
+import { userModel } from "../../models/user.js";
+
 export async function postUser(req, res) {
   const newUser = new userModel({
     username: req.body.username,
